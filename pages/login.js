@@ -24,7 +24,7 @@ const Login = props => {
 				<AppContainer>
 					<AppInput title="Apelido ou email do userario" label="Username"></AppInput>
 					<AppInput title = "Senha do Usuario" type="password" label="Senha"> </AppInput>
-					<AppButton title="Entrar" value ="Login" />
+					<AppButton title="Pão" href="https://www.youtube.com" value ="Login" />
 				</AppContainer>
 			</main>
 		</div>

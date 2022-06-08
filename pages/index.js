@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link';
+import AppButton from'../src/components'
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       <main>
         <nav>
           <p>Chat de Infoweb</p>
-          <Link href="/login"><button>login</button></Link>
+          <Link href="/login"><AppButton>login</AppButton></Link>
         </nav>
         <h1>Landing page do chat de Infoweb</h1>
       </main>
