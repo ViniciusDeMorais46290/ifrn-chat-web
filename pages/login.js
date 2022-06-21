@@ -2,7 +2,7 @@ import React from 'react';
 //import {AppContainer} from '../src/components/AppContainerComponent';
 //import {AppInput} from '../src/components/AppInputComponent';
 //import {AppButton} from '../src/components/AppButtonComponent';
-import { AppContainer,AppInput,AppButton } from "../src/components/index";
+import { AppContainer,AppInput,AppButton } from "../src/components";
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
@@ -24,7 +24,7 @@ const Login = props => {
 				<AppContainer>
 					<AppInput title="Apelido ou email do userario" label="Username"></AppInput>
 					<AppInput title = "Senha do Usuario" type="password" label="Senha"> </AppInput>
-					<AppButton title="Pão" href="https://www.youtube.com" value ="Login" />
+					<AppButton color = "primary" title="Pão" href="https://www.youtube.com" value ="Login" />
 				</AppContainer>
 			</main>
 		</div>
