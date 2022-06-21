@@ -18,7 +18,7 @@ const Login = props => {
 			<main>
 				<nav>
 					<p>Chat top das galaxias</p>
-					<button onClick={() => router.back()}> Volrtar </button>
+					<AppButton onClick={() => router.back()} title="Voltar"></AppButton>
 
 				</nav>
 				<AppContainer>
