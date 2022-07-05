@@ -1,4 +1,5 @@
 import React from 'react';
+import {useState} from 'react';
 //import {AppContainer} from '../src/components/AppContainerComponent';
 //import {AppInput} from '../src/components/AppInputComponent';
 //import {AppButton} from '../src/components/AppButtonComponent';
@@ -9,6 +10,8 @@ import { useRouter } from 'next/router';
 
 const Login = props => {
 	const router = useRouter();
+	const [Usuario, setUsuario] = useState();
+	const [Senha, setSenha] = useState();
 
   return (
 		<div>
@@ -22,9 +25,9 @@ const Login = props => {
 
 				</nav>
 				<AppContainer>
-					<AppInput title="Apelido ou email do userario" label="Username"></AppInput>
-					<AppInput title = "Senha do Usuario" type="password" label="Senha"> </AppInput>
-					<AppButton color = "primary" title="Pão" href="https://www.youtube.com" value ="Login" />
+					<AppInput title="Apelido ou email do userario" label="Username" value={Usuario} onChange={(e) => setUsuario(e.target.value)}></AppInput>
+					<AppInput title = "Senha do Usuario" type="password" label="Senha" value = {Senha} onChange={(e) => setSenha(e.target.value)}> </AppInput>
+					<AppButton color = "primary" title="Pão" href="https://www.youtube.com" value ="Login" disabled={!(!!Usuario && !!Senha)} />
 				</AppContainer>
 			</main>
 		</div>

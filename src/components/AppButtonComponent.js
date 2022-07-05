@@ -11,8 +11,7 @@ export const AppButton = (props) => {
 		variant = "contained"
 		color={color_button}
 		onClick={handle_click}
-		title={props.title}
-		href={href_button}
+		{...props}
 	  >
 		{props.title}
 	  </Button>
